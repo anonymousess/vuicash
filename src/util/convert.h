@@ -1,5 +1,5 @@
-#ifndef QTUM_CONVERT_H
-#define QTUM_CONVERT_H
+#ifndef VUI_CONVERT_H
+#define VUI_CONVERT_H
 
 ////////////////////////////////////////////////////// vuicash
 #include <uint256.h>
@@ -62,4 +62,4 @@ inline uint160 u160Touint(const dev::u160& in)
 }
 //////////////////////////////////////////////////////
 
-#endif // QTUM_CONVERT_H
+#endif // VUI_CONVERT_H

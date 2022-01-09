@@ -70,7 +70,7 @@ SendToContract::SendToContract(const PlatformStyle *platformStyle, QWidget *pare
     ui->scrollAreaFunction->setWidget(m_ABIFunctionField);
     ui->lineEditAmount->setEnabled(true);
     ui->labelContractAddress->setToolTip(tr("The contract address that will receive the funds and data."));
-    ui->labelAmount->setToolTip(tr("The amount in QTUM to send. Default = 0."));
+    ui->labelAmount->setToolTip(tr("The amount in VUI to send. Default = 0."));
     ui->labelSenderAddress->setToolTip(tr("The vuicash address that will be used as sender."));
 
     m_tabInfo = new TabBarInfo(ui->stackedWidget);
@@ -139,7 +139,7 @@ void SendToContract::setModel(WalletModel *_model)
     if (m_model && m_model->getOptionsModel())
         connect(m_model->getOptionsModel(), &OptionsModel::displayUnitChanged, this, &SendToContract::updateDisplayUnit);
 
-    // update the display unit, to not use the default ("QTUM")
+    // update the display unit, to not use the default ("VUI")
     updateDisplayUnit();
 
     bCreateUnsigned = m_model->createUnsigned();
@@ -308,7 +308,7 @@ void SendToContract::on_gasInfoChanged(quint64 blockGasLimit, quint64 minGasPric
 {
     Q_UNUSED(nGasPrice);
     ui->labelGasLimit->setToolTip(tr("Gas limit. Default = %1, Max = %2").arg(DEFAULT_GAS_LIMIT_OP_CREATE).arg(blockGasLimit));
-    ui->labelGasPrice->setToolTip(tr("Gas price: QTUM price per gas unit. Default = %1, Min = %2").arg(QString::fromStdString(FormatMoney(DEFAULT_GAS_PRICE))).arg(QString::fromStdString(FormatMoney(minGasPrice))));
+    ui->labelGasPrice->setToolTip(tr("Gas price: VUI price per gas unit. Default = %1, Min = %2").arg(QString::fromStdString(FormatMoney(DEFAULT_GAS_PRICE))).arg(QString::fromStdString(FormatMoney(minGasPrice))));
     ui->lineEditGasPrice->SetMinValue(minGasPrice);
     ui->lineEditGasLimit->setMaximum(blockGasLimit);
 }

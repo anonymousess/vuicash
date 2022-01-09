@@ -1,5 +1,5 @@
-#ifndef QTUMHWITOOL_H
-#define QTUMHWITOOL_H
+#ifndef VUIHWITOOL_H
+#define VUIHWITOOL_H
 
 #include <QObject>
 #include <QString>
@@ -253,4 +253,4 @@ private:
     VuiCashHwiToolPriv* d;
 };
 
-#endif // QTUMHWITOOL_H
+#endif // VUIHWITOOL_H

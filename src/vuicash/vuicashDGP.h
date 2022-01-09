@@ -1,5 +1,5 @@
-#ifndef QTUMDGP_H
-#define QTUMDGP_H
+#ifndef VUIDGP_H
+#define VUIDGP_H
 
 #include <vuicash/vuicashstate.h>
 #include <primitives/block.h>

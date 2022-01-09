@@ -1,5 +1,5 @@
-#ifndef QTUMTOKEN_H
-#define QTUMTOKEN_H
+#ifndef VUITOKEN_H
+#define VUITOKEN_H
 #include <string>
 #include <vector>
 #include <map>
@@ -114,4 +114,4 @@ private:
     VuiCashTokenData* d;
 };
 
-#endif // QTUMTOKEN_H
+#endif // VUITOKEN_H

@@ -1,5 +1,5 @@
-#ifndef QTUMDELEGATION_H
-#define QTUMDELEGATION_H
+#ifndef VUIDELEGATION_H
+#define VUIDELEGATION_H
 #include <string>
 #include <vector>
 #include <map>

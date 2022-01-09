@@ -1,5 +1,5 @@
-#ifndef QTUMTRANSACTION_H
-#define QTUMTRANSACTION_H
+#ifndef VUITRANSACTION_H
+#define VUITRANSACTION_H
 
 #include <libethereum/Transaction.h>
 

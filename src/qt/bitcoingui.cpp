@@ -686,7 +686,7 @@ void BitcoinGUI::setClientModel(ClientModel *_clientModel)
         // Check for updates
         if(_clientModel->getOptionsModel()->getCheckForUpdates() && vuicashVersionChecker->newVersionAvailable())
         {
-            QString link = QString("<a href=%1>%2</a>").arg(QTUM_RELEASES, QTUM_RELEASES);
+            QString link = QString("<a href=%1>%2</a>").arg(VUI_RELEASES, VUI_RELEASES);
             QString message(tr("New version of VuiCash wallet is available on the VuiCash source code repository: <br /> %1. <br />It is recommended to download it and update this application").arg(link));
             QMessageBox::information(this, tr("Check for updates"), message);
         }

@@ -59,12 +59,12 @@ static constexpr uint64_t GB_BYTES{1000000000};
 static constexpr int DEFAULT_PRUNE_TARGET_GB{2};
 
 /* Mainnet vuicash explorer uri */
-#define QTUM_INFO_MAINNET "<a href='https://vuicash.info/%1/%2'>%2</a>"
+#define VUI_INFO_MAINNET "<a href='https://vuicash.info/%1/%2'>%2</a>"
 
 /* Testnet vuicash explorer uri */
-#define QTUM_INFO_TESTNET "<a href='https://testnet.vuicash.info/%1/%2'>%2</a>"
+#define VUI_INFO_TESTNET "<a href='https://testnet.vuicash.info/%1/%2'>%2</a>"
 
 /* Hardware wallet interface uri */
-#define QTUM_HWI_TOOL "<a href='https://github.com/vuicash/HWI/tags'>HWI Tool</a>"
+#define VUI_HWI_TOOL "<a href='https://github.com/vuicash/HWI/tags'>HWI Tool</a>"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

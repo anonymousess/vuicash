@@ -1,5 +1,5 @@
-#ifndef QTUMUTILS_H
-#define QTUMUTILS_H
+#ifndef VUIUTILS_H
+#define VUIUTILS_H
 
 #include <libdevcore/Common.h>
 #include <libdevcore/FixedHash.h>
