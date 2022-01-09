@@ -259,7 +259,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 
     //////////////////////////////////////////////////////// vuicash
     VuiCashDGP vuicashDGP(globalState.get(), fGettingValuesDGP);
-    globalSealEngine->setVuiCashSchedule(vuicashDGP.getGasSchedule(nHeight));
+    globalSealEngine->setVuiSchedule(vuicashDGP.getGasSchedule(nHeight));
     uint32_t blockSizeDGP = vuicashDGP.getBlockSize(nHeight);
     minGasPrice = vuicashDGP.getMinGasPrice(nHeight);
     if(gArgs.IsArgSet("-staker-min-tx-gas-price")) {

@@ -2924,7 +2924,7 @@ bool CChainState::ConnectBlock(const CBlock& block, BlockValidationState& state,
 
     ///////////////////////////////////////////////// // vuicash
     VuiCashDGP vuicashDGP(globalState.get(), fGettingValuesDGP);
-    globalSealEngine->setVuiCashSchedule(vuicashDGP.getGasSchedule(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
+    globalSealEngine->setVuiSchedule(vuicashDGP.getGasSchedule(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
     uint32_t sizeBlockDGP = vuicashDGP.getBlockSize(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));
     uint64_t minGasPrice = vuicashDGP.getMinGasPrice(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));
     uint64_t blockGasLimit = vuicashDGP.getBlockGasLimit(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));
