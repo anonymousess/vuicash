@@ -33,7 +33,7 @@ Basic usage resources:
 
 Development resources:
 
-* [VuiCash Book - A Developer's Guide To QTUM](http://book.vuicash.site/en/)
+* [VuiCash Book - A Developer's Guide To VUI](http://book.vuicash.site/en/)
 * [VuiCash contract usage](https://docs.vuicash.site/en/QRC20-Token-Introduce.html)
 * [Deploying a custom token to VuiCash](https://blog.vuicash.org/vuicash-custom-token-walkthrough-467d725fa27d)
 * [VuiCashJS document](https://vuicash.github.io/vuicashjs-doc/)
@@ -60,7 +60,7 @@ Developer's Tools
   * https://github.com/vuicash/vuicashportal
 * Docker images for running vuicash services
   * https://github.com/vuicash/vuicash-docker
-* vuicash.info API that powers the block explorer and the QTUM Web wallet
+* vuicash.info API that powers the block explorer and the VUI Web wallet
   * https://github.com/vuicash/vuicashinfo-api#vuicashinfo-api-documentation
 
 
@@ -71,7 +71,7 @@ VuiCash Core is our primary mainnet wallet. It implements a full node and is cap
 
 VuiCash Core currently implements the following:
 
-* Sending/Receiving QTUM coins
+* Sending/Receiving VUI coins
 * Sending/Receiving QRC20 tokens on the VuiCash network
 * Staking and creating blocks for the VuiCash network
 * Creating and interacting with smart contracts
@@ -93,7 +93,7 @@ A browser wallet that supports the Ledger hardware wallet, offline cold wallet, 
 
 Web site https://vuicashwallet.org
 
-User documentation https://github.com/vuicash/documents/tree/master/en/QTUM-WebWallet-usage
+User documentation https://github.com/vuicash/documents/tree/master/en/VUI-WebWallet-usage
 
 ### VuiCash Electrum
 

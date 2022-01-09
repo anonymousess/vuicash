@@ -12,7 +12,7 @@
 #include <libdevcrypto/Hash.h>
 #include <libdevcrypto/LibSnark.h>
 #include <libethcore/Common.h>
-#ifdef QTUM_BUILD
+#ifdef VUI_BUILD
 #include <vuicash/vuicashutils.h>
 #endif
 using namespace std;
@@ -73,7 +73,7 @@ ETH_REGISTER_PRECOMPILED(btc_ecrecover)(bytesConstRef _in)
     try
     {
         bool recovered = false;
-#ifdef QTUM_BUILD
+#ifdef VUI_BUILD
         u256 v = (u256)in.v;
         recovered = vuicashutils::btc_ecrecover(in.hash, v, in.r, in.s, ret);
 #endif

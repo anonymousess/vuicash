@@ -72,7 +72,7 @@ enum class Network
     ByzantiumToConstantinopleFixAt5 = 104,
 
     Special = 0xff,         ///< Something else.
-    vuicashMainNetwork = 9,    ///< QTUM Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
+    vuicashMainNetwork = 9,    ///< VUI Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
     vuicashTestNetwork = 10
 };
 
