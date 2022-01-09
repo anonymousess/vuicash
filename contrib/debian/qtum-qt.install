@@ -1,0 +1,6 @@
+usr/local/bin/vuicash-qt usr/bin
+share/pixmaps/vuicash32.xpm usr/share/pixmaps
+share/pixmaps/vuicash16.xpm usr/share/pixmaps
+share/pixmaps/vuicash128.png usr/share/pixmaps
+debian/vuicash-qt.desktop usr/share/applications
+debian/vuicash-qt.protocol usr/share/kde4/services/

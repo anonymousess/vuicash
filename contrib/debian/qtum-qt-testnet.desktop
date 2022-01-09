@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=VuiCash Core Testnet
+Comment=Connect to the VuiCash P2P Network Testnet
+Exec=vuicash-qt -testnet %u
+Terminal=false
+Type=Application
+Icon=vuicashtestnet128
+MimeType=x-scheme-handler/vuicash;
+Categories=Network;
+StartupWMClass=VuiCash-qt-testnet
+Name[en_US]=vuicash-qt-testnet
