@@ -1989,7 +1989,7 @@ bool AppInitMain(NodeContext& node)
                 LOCK(cs_main);
 
                 VuiCashDGP vuicashDGP(globalState.get(), fGettingValuesDGP);
-                globalSealEngine->setVuiSchedule(vuicashDGP.getGasSchedule(::ChainActive().Height() + (::ChainActive().Height()+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
+                globalSealEngine->setQtumSchedule(vuicashDGP.getGasSchedule(::ChainActive().Height() + (::ChainActive().Height()+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
 
                 if (!is_coinsview_empty) {
                     uiInterface.InitMessage(_("Verifying blocks...").translated);
